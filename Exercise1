@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class Exercise1 {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Программа выводит дни недели на Русском и Английском\n\nе-вывести на английском языке\nr-вывести на руссом языке ");
+
+        String lang = scan.nextLine();
+
+        switch (lang){
+            case "e":
+                System.out.println("Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday");
+                break;
+            case "r":
+                System.out.println("Понедельник\nВторник\nСреда\nЧетверг\nПятница\nСуббота\nВоскресенье");
+                break;
+            default:
+                System.out.println("Незнакомый Язык");
+        }
+    }
+}
