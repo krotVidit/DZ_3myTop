@@ -1,0 +1,27 @@
+import java.util.*;
+
+
+public class Exercise5 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Введите трехзначное число");
+        int x3 = scan.nextInt();
+
+        if ((x3<999) && (x3>99)){
+            int num1= x3/100;
+            int num2 =x3/10%10;
+            int num3 = x3%10;
+
+            if( num1 >= num2 && num1 >= num3)
+                System.out.println(num1 + " Наибольшее из 3х числа");
+
+            else if (num2 >= num1 && num2 >= num3)
+                System.out.println(num2 + " Наибольшее из 3х числа");
+
+            else
+                System.out.println(num3 + " Наибольшее из 3х числа");
+                
+        }
+    }
+}
